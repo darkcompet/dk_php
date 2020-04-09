@@ -5,11 +5,11 @@ Dk Library for PHP, is one in series of Dk libraries.
 > About Dk Libraries: acts as a `bridge` between a framework with the app. It supports us write code with one style for different frameworks or libraries, so we don't need take an effort to remember name or usage of classes, functions... inside the target framework.
 
 ---
-## Install
+## Installation
 
-Just clone this repo and put source code under folder `Tool`. So our folder hierarchy will look like:
+Just clone this repo and put source code under folder `src\Tool` or `app\Tool` depends on the framework you selected. So our folder hierarchy will look like:
 
-- `App\`
+- `app\`
 - --- `Tool\`
 - ------ `Core\`
 
