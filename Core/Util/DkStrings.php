@@ -14,17 +14,21 @@ class DkStrings {
     * @return false|string
     */
    public static function trim($text, $targetChar) {
-      if ($text == null)
-         return null;
+      if ($text == null) {
+          return null;
+      }
+
       $N = strlen($text);
       $start = 0;
       $end = $N - 1;
+
       while ($start <= $end && $text[$start] == $targetChar) {
          ++$start;
       }
       while ($end >= $start && $text[$end] == $targetChar) {
          --$end;
       }
+
       return ($start > 0 || $end < $N - 1) ? substr($text, $start, $end - $start + 1) : $text;
    }
 
@@ -42,8 +46,8 @@ class DkStrings {
    }
 
    /**
-    * @param array $items
-    * @param string $separator
+    * @param array $items an array of string element
+    * @param string $separator like ":", "div"...
     * @return string
     */
    public static function join($items, $separator) {
@@ -51,26 +55,40 @@ class DkStrings {
    }
 
    /**
-    * @param string $text
-    * @param int $startIndex inclusive
-    * @param int $endIndex exclusive
+    * @param string $text target string
+    * @param int $startIndex inclusive index
+    * @param int $endIndex exclusive index
     * @return false|string
     */
    public static function substring($text, $startIndex, $endIndex) {
       return substr($text, $startIndex, $endIndex - $startIndex + 1);
    }
 
-   public static function replace($text, $target, $replacement) {
+    /**
+     * @param string $text
+     * @param string $target
+     * @param string $replacement
+     * @return string|string[]
+     */
+    public static function replace($text, $target, $replacement) {
       return str_replace($target, $replacement, $text);
    }
 
-   public static function regex_replace($text, $pattern, $replacement) {
+    /**
+     * Replace a substring which be expressed in regular expression with a replacement in given text.
+     *
+     * @param string $text
+     * @param string $pattern like "/:/"
+     * @param string $replacement like "new"
+     * @return string|string[]|null
+     */
+    public static function regex_replace($text, $pattern, $replacement) {
       return preg_replace($pattern, $replacement, $text);
    }
 
    /**
-    * @param $format string like "print %d fields in class %s"
-    * @param $args mixed list of argument
+    * @param string $format like "print %d fields in class %s"
+    * @param array $args list of argument
     * @return string
     */
    public static function format($format, $args) {

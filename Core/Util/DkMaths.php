@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Tool\Core\Util;
+
 /**
  * Utility class for math.
  *
