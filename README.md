@@ -16,6 +16,7 @@ So our folder hierarchy will look like:
 - `app\`
 - --- `Tool\`
 - ------ `PhpCore\`
+- ------ `PhpAppBundle\`
 
 
 ## Usage
