@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tool\Core\Util;
+namespace App\Tool\PhpCore\Util;
 
 /**
  * Utility class for String.

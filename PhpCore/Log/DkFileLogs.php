@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tool\Core\Log;
+namespace App\Tool\PhpCore\Log;
 
 class DkFileLogs extends AbsLogs {
 }

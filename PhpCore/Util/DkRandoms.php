@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tool\Core\Util;
+namespace App\Tool\PhpCore\Util;
 
 class DkRandoms {
    public static function generateRandomKey($length = 64) {
