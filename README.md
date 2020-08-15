@@ -1,6 +1,6 @@
 # Dk PHP
 
-Dk Library for PHP, is one in series of Dk libraries.
+Dk Library for PHP, one in series of Dk libraries.
 
 >About Dk Libraries: acts as a `bridge` between a framework with the app.
 >It supports us write code with one style for different frameworks or libraries,
@@ -10,8 +10,8 @@ Dk Library for PHP, is one in series of Dk libraries.
 
 ## Installation
 
-Just clone this repo and put source code under folder `src\Tool` or `app\Tool` depends on the framework we choosen.
-So our folder hierarchy will look like:
+Just clone this repo and put source code under folder `src\Tool` or `app\Tool` depends on the framework.
+Our folder hierarchy will look like:
 
 - `app\`
 - --- `Tool\`
@@ -21,7 +21,7 @@ So our folder hierarchy will look like:
 
 ## Usage
 
-This library provides a lot of core features. Here is a brief :
+This library provides a lot of core features:
 
 - `Tool\PhpCore\Util\DkString.php`: manipulate string operations.
 

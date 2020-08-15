@@ -5,10 +5,10 @@ namespace App\Tool\PhpCore\Log;
 class DkWebLogs extends AbsLogs {
    /**
     * Dump and stop page to see result.
-    * @param $obj
+    *
+    * @param object $obj any.
     */
    public static function dump($obj) {
-      var_dump($obj);
-      die();
+      echo "<pre>"; var_dump($obj); die();
    }
 }

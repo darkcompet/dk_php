@@ -64,25 +64,25 @@ class DkStrings {
       return substr($text, $startIndex, $endIndex - $startIndex + 1);
    }
 
-    /**
-     * @param string $text
-     * @param string $target
-     * @param string $replacement
-     * @return string|string[]
-     */
+   /**
+    * @param string $text
+    * @param string $target
+    * @param string $replacement
+    * @return string|string[]
+    */
     public static function replace($text, $target, $replacement) {
       return str_replace($target, $replacement, $text);
    }
 
-    /**
-     * Replace a substring which be expressed in regular expression with a replacement in given text.
-     *
-     * @param string $text
-     * @param string $pattern like "/:/"
-     * @param string $replacement like "new"
-     * @return string|string[]|null
-     */
-    public static function regex_replace($text, $pattern, $replacement) {
+   /**
+    * Replace a substring which be expressed in regular expression with a replacement in given text.
+    *
+    * @param string $text
+    * @param string $pattern like "/:/"
+    * @param string $replacement like "new"
+    * @return string|string[]|null
+    */
+   public static function replace_regex($text, $pattern, $replacement) {
       return preg_replace($pattern, $replacement, $text);
    }
 

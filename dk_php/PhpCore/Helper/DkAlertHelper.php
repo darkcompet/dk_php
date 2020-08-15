@@ -2,9 +2,9 @@
 
 namespace App\Tool\PhpCore\Helper;
 
-class DkAlerts {
+class DkAlertHelper {
    /**
-    * Popup a normal message with hard dialog so user must click to close.
+    * Tell browser show a confirm popup.
     *
     * @param string $msg message
     */

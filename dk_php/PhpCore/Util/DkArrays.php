@@ -10,6 +10,6 @@ class DkArrays {
     * @return int number of element in given array.
     */
    public static function size($arr) {
-      return isset($arr) ? count($arr) : 0;
+      return count($arr);
    }
 }
