@@ -3,7 +3,7 @@
 namespace App\Tool\PhpCore\Util;
 
 /**
- * Utility class for math.
+ * Utility for math.
  *
  * @author darkcompet
  */

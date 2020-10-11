@@ -3,7 +3,7 @@
 namespace App\Tool\PhpCore\Util;
 
 /**
- * Utility class for String.
+ * String Utility.
  *
  * @author darkcompet
  */

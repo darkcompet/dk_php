@@ -2,6 +2,11 @@
 
 namespace App\Tool\PhpCore\Util;
 
+/**
+ * Utility for random.
+ * 
+ * @author darkcompet
+ */
 class DkRandoms {
    public static function generateRandomKey($length = 64) {
       $chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

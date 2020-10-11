@@ -2,7 +2,7 @@
 
 namespace App\Tool\PhpCore\Helper;
 
-class DkAlertHelper {
+class DkAlerts {
    /**
     * Tell browser show a confirm popup.
     *

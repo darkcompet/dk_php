@@ -2,6 +2,11 @@
 
 namespace App\Tool\PhpCore\Util;
 
+/**
+ * Common Utility.
+ * 
+ * @author darkcompet
+ */
 class DkUtils {
    /**
     * Convert given object to string so we can print out it.

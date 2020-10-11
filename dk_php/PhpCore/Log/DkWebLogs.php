@@ -2,9 +2,10 @@
 
 namespace App\Tool\PhpCore\Log;
 
-class DkWebLogs extends AbsLogs {
+class DkWebLogs {
    /**
     * Dump and stop page to see result.
+    * Or use snippet: `dkdd`
     *
     * @param object $obj any.
     */
