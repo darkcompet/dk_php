@@ -82,7 +82,7 @@ class DkStrings {
     * @param string $replacement like "new"
     * @return string|string[]|null
     */
-   public static function replace_regex($text, $pattern, $replacement) {
+   public static function replaceRegex($text, $pattern, $replacement) {
       return preg_replace($pattern, $replacement, $text);
    }
 
@@ -93,5 +93,20 @@ class DkStrings {
     */
    public static function format($format, $args) {
       return sprintf($format, $args);
+   }
+   
+   /**
+    * Convert html-special chars: & (アンパサンド)、< (小なり)、> (大なり)、' (シングルクォート)、" (ダブルクォート)
+    * to html symbol which can be displayed normal in webpage.
+    * In other words, this makes given `text` can be displayed well in html page.
+    *
+    * Refer: https://www.php.net/manual/ja/function.htmlspecialchars.php
+    */
+    public static function convertHtmlSpecialChars($text, $tag = ENT_QUOTES) {
+      return htmlspecialchars($text, $tag);
+   }
+   
+   public static function convertAllHtmlSpecialChars($text) {
+      return htmlentities($text);
    }
 }
