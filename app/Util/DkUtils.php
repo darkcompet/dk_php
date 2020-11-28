@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tool\PhpCore\Util;
+namespace App\Util;
 
 /**
  * Common Utility.

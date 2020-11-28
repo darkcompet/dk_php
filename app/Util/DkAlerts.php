@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tool\PhpCore\Helper;
+namespace App\Util;
 
 class DkAlerts {
    /**

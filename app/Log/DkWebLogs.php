@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tool\PhpCore\Log;
+namespace App\Log;
 
 class DkWebLogs {
    /**
