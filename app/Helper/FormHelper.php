@@ -18,11 +18,23 @@ class FormHelper {
     * Make a value1-value2 map (array) between given 2 keys.
     * @return array
     */
-    function valuesMapping(&$arr, $key1, $key2) {
+   public static  function valuesMapping(&$arr, $key1, $key2) {
       $res = [];
       foreach ($arr as $item) {
          $res[$item[$key1]] = $item[$key2];
       }
       return $res;
+   }
+   
+   public static  function trimParams(&$params) {
+      foreach ($params as &$item) {
+         if (is_string($item)) {
+            $item = trim($item);
+         }
+         else if (is_array($item)) {
+            self::trimParams($item);
+         }
+      }
+      unset($item);
    }
 }

@@ -147,4 +147,14 @@ class DkDateTimes {
    public static function text2time($time_in_text, $format, $timezone = null) {
       return DateTime::createFromFormat($format, $time_in_text, $timezone)->getTimestamp();
    }
+   
+   public static function splitByDay($start_date, $end_date) {
+      $dates = [];
+      $current_date = $start_date;
+      while ($current_date <= $end_date) {
+          $dates [] = $current_date;
+          $current_date = date("Y-m-d", strtotime("$current_date + 1 days"));
+      }
+      return $dates;
+  }
 }
