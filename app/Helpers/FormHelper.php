@@ -18,7 +18,7 @@ class FormHelper {
      * Make a value1-value2 map (array) between given 2 keys.
      * @return array
      */
-    public static  function valuesMapping(&$arr, $key1, $key2) {
+    public static  function valueMapAtKeys(&$arr, $key1, $key2) {
         $res = [];
         foreach ($arr as $item) {
             $res[$item[$key1]] = $item[$key2];
