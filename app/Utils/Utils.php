@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Util;
+namespace App\Utils;
 
 /**
  * Common Utility.
  * 
  * @author darkcompet
  */
-class DkUtils {
+class Utils {
 }
