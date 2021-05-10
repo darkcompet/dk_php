@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Utils;
+namespace App\Tool\Compet\Core;
 
 /**
- * Utility for math.
+ * Helper for math.
  *
  * @author darkcompet
  */
-class Maths {
+class DkMaths {
     /**
      * Try to parse an integer from given $text.
      *

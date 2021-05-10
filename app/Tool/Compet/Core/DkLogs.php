@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Log;
+namespace App\Tool\Compet\Core;
 
-class WebLogs {
+class DkLogs {
     /**
      * Dump and stop page to see result.
      * Or use snippet: `dkdd`

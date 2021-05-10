@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Utils;
+namespace App\Tool\Compet\Core;
 
 /**
- * Object Utility.
+ * Helper for object.
  * 
  * @author darkcompet
  */
-class Objects {
+class DkObjects {
     /**
      * Convert given object to string so we can print out it.
      * @param object $obj any

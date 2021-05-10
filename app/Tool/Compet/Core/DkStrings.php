@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Utils;
+namespace App\Tool\Compet\Core;
 
 /**
- * String Utility.
+ * Helper for string.
  *
  * @author darkcompet
  */
-class Strings {
+class DkStrings {
     /**
      * @param string $text
      * @param string $targetChar character should be trimed

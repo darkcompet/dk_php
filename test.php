@@ -1,19 +1,7 @@
 <?php
 
-$arr = [];
-
-if ($a) echo 'empty array will make false condition';
-
-foreach ($arr as $k => $v) {
-   echo "$k, $v\n";
-}
-
-if (empty(" ")) {
-   echo "empty";
-}
-
-class X {
-   function foo() {
-      return "this is foo";
-   }
-}
+$s = "（）「」【】🌷これはabc日本語｀｀””";
+$a = str_split($s, 2);
+$r = implode('', $a);
+echo print_r(str_split($s, 2), true) . PHP_EOL;
+echo print_r($r, true) . PHP_EOL;

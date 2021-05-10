@@ -1,14 +1,17 @@
 <?php
 
-namespace App\Utils;
+namespace App\Tool\Compet\Core;
 
 use DateTime;
 
-class DateTimes {
+class DkDateTimes {
     const FORMAT = 'Y-m-d H:i:s';
     const FORMAT_YMD = 'Y-m-d';
     const FORMAT_HIS = 'H:i:s';
 
+    /**
+     * @return int Time in seconds.
+     */
     public static function now() {
         return time();
     }
