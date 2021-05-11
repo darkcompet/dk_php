@@ -15,21 +15,5 @@ Our folder hierarchy will look like:
 
 - `app\`
 - --- `Tool\`
-- ------ `PhpCore\`
-- ------ `PhpAppBundle\`
-
-
-## Usage
-
-This library provides a lot of core features:
-
-- `Tool\PhpCore\Util\DkString.php`: manipulate string operations.
-
-- `Tool\PhpCore\Helper\DkAlerts.php`: alert popup window to client.
-
-- `Tool\PhpCore\Exception\DkCouldNotPerformOperation.php`: useful exception when we cannot perform an action.
-
-...
-
-
-## Reference
+- ------ `Compet\`
+- --------- `Core\`
