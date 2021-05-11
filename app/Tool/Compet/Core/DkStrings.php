@@ -69,7 +69,7 @@ class DkStrings {
      * @return string
      */
     public static function substring($text, $startIndex, $endIndex) {
-        return substr($text, $startIndex, $endIndex - $startIndex);
+        return mb_substr($text, $startIndex, $endIndex - $startIndex);
     }
 
     /**
